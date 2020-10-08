@@ -7,6 +7,7 @@ const Styledimg = styled.img`
 
 function Image(props){
     const {imageURL} = props
+
     return(
         <div className = 'imageContain'>
             <Styledimg src = {imageURL} alt = 'picture of the day'></Styledimg>

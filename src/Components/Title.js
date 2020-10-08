@@ -1,15 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const h1c = styled.h1`
-    font-size: 2rem;
-    
+const H1c = styled.h1`
+    font-size: 4rem;
+    display:flex;
+    justify-content: center;
+    width: 48%;
+    margin: 1rem 42rem 0 58rem;
 `
 
 function Title(props){
     const {title} = props
     return(
-        <h1>{title}</h1>
+        <H1c>{title}</H1c>
     )
 }
 export default Title
