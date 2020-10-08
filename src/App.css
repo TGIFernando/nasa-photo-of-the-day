@@ -25,6 +25,8 @@ body{
 
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .App-logo {
@@ -55,8 +57,11 @@ body{
 
 .contain {
   display:flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 50rem;
+  justify-content: center;
+  align-content: space-around;
+  margin: 0 1rem;
 }
 
 .expp{
@@ -70,6 +75,10 @@ body{
 
 .p {
   font-size: 1.6rem;
+}
+.flex {
+  display:flex;
+  border: 2px soled purple;
 }
 
 @keyframes App-logo-spin {

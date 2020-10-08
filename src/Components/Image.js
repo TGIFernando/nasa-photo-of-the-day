@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Styledimg = styled.img`
-    width: 90vh;
+    width: 80vh;
 `
 
 function Image(props){

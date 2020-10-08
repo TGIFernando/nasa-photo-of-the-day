@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledExp = styled.div`
-    width: 30%;
+    width: 98%;
     height: 80vh;
     border: 3px solid black;
     padding: 3px;
