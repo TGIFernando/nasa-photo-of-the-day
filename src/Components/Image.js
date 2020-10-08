@@ -1,11 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const Styledimg = styled.img`
+    width: 90vh;
+`
 
 function Image(props){
     const {imageURL} = props
-    console.log(props)
     return(
         <div className = 'imageContain'>
-            <img src = {imageURL} alt = 'picture of the day'></img>
+            <Styledimg src = {imageURL} alt = 'picture of the day'></Styledimg>
         </div>
     )
 }

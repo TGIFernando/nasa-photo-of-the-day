@@ -19,16 +19,15 @@ function App() {
     })
   }, [])
 
-
-  
-
-  
   return (
     <div className="App">
       <Title title = {info.title} />
-      <Explanation explain = {info.explanation}/>
-      <Image imageURL = {info.url}/>
       <Search/>
+      <div className='contain'>
+        <Explanation explain = {info.explanation}/>
+        <Image imageURL = {info.url}/>
+      </div>
+      
     </div>
   );
 }

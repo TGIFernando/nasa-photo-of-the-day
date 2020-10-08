@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import styled from 'styled-components'
 
 const blankSearch = {
     search: "",
@@ -6,6 +7,10 @@ const blankSearch = {
 function Search(){
     const BASE_URL = 'https://api.nasa.gov/planetary/apod?api_key=pUxe64fv7f4vGRG91qDFNbEOH5m1OyVGUZfILdXR'
     const [search, setSearch] = useState(blankSearch)
+    const Styledsearch = styled.form`
+    margin: 0 70vh 2px 30vh;
+    display:flex;
+    `
 
 
     // useEffect(() => {
@@ -32,11 +37,11 @@ function Search(){
 
       return(
           <div className = 'search'>
-              <form onSubmit = {onSubmit}>
+              <Styledsearch onSubmit = {onSubmit}>
                   <input type = 'text' name = 'search' placeholder='yyyy/mm/dd'
                   onChange = {onChange} value = {search.search}></input>
                   <button type = 'submit'>Search</button>
-              </form>
+              </Styledsearch>
           </div>
       )
 
