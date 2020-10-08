@@ -8,13 +8,11 @@ import "./App.css";
 
 function App() {
   const [info, setInfo] = useState([])
-  const [photo, setPhoto] = useState('')
   const BASE_URL = 'https://api.nasa.gov/planetary/apod?api_key=pUxe64fv7f4vGRG91qDFNbEOH5m1OyVGUZfILdXR'
 
   useEffect(() => {
     axios.get(`${BASE_URL}
     `).then(res => {
-      setPhoto(res.data.url)
       setInfo(res.data)
     }).catch(err => {
       console.log('Error: '+err)
@@ -24,15 +22,13 @@ function App() {
 
   
 
- console.log(info.explanation)
   
   return (
     <div className="App">
       <Title title = {info.title} />
-      <Explanation explain = {info.explanation} />
-      {/* <Search/>
       <Explanation explain = {info.explanation}/>
-      <Image/> */}
+      <Image imageURL = {info.url}/>
+      <Search/>
     </div>
   );
 }
